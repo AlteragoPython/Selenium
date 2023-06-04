@@ -18,7 +18,7 @@ password_field.send_keys("secret_sauce")
 login_button = driver.find_element(*Locators.Locators.Login_button)
 login_button.click()
 
-# check  expected URL
+# check the expected URL
 current_url = driver.current_url
 expected_url = "https://www.saucedemo.com/inventory.html"
 assert current_url == expected_url
